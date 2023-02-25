@@ -78,7 +78,7 @@ body {
 }
 
 .button:hover {
-    background-color: #994d0f;
+    background-color: #bf0000;
     transition: all 0.3s linear;
 }
 
@@ -92,6 +92,7 @@ body {
     left: 0;
     margin-top: 155px;
     margin-left: 140px;
+    margin-bottom: 12px;
 }
 
 .header-subtitle {
@@ -111,6 +112,7 @@ body {
 
 .header-suptitle {
     padding-top: 10px;
+    padding-bottom: 22px;
     font-family: Open Sans;
     font-size: 18px;
     font-weight: 400;
@@ -135,4 +137,29 @@ body {
     background-color: #fff;
     top: 150px;
     right: 60px
+}
+
+.button_frame {
+    position: relative;
+    height: 47px;
+    width: 137px;
+    background-color: #FF7400;
+    color: #fff;
+    margin: auto auto;
+}
+
+.button-text {
+    position: absolute;
+    font-family: Open Sans, serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    padding: 14px 28px;
+    text-decoration: none;
+}
+
+.button_frame:hover {
+background-color: #bf0000;
+transition: all 0.3s ease;
 }
