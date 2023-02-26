@@ -3,9 +3,14 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
 .header {
     background-image: url(background.jpg);
-    height: 100vh;
+    height: 800px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -82,20 +87,20 @@ body {
     transition: all 0.3s linear;
 }
 
-.header-title {
+.header-content {
     font-family: Tinos, serial;
     font-size: 40px;
     font-weight: 400;
     color: #D67E35;
     text-align: center;
-    position:absolute;
+    width: 450px;
+    padding-left: 10px;
+    margin-top: 230px;
+    position: relative;
     left: 0;
-    margin-top: 155px;
-    margin-left: 140px;
-    margin-bottom: 12px;
 }
 
-.header-subtitle {
+.header-content__subtitle {
     font-family: Tinos, serial;
     font-size: 70px;
     font-weight: 400;
@@ -110,7 +115,7 @@ body {
     padding-left: 160px;
 }
 
-.header-suptitle {
+.header-content__suptitle {
     padding-top: 10px;
     padding-bottom: 22px;
     font-family: Open Sans;
@@ -119,7 +124,7 @@ body {
     color: #fff;
 }
 
-.header-suptitle::after {
+.header-content::after {
     position: absolute;
     content: "";
     height: 1.5px;
@@ -129,7 +134,7 @@ body {
     left: 60px;
 }
 
-.header-suptitle::before {
+.header-content::before {
     position: absolute;
     content: "";
     height: 1.5px;
@@ -139,27 +144,80 @@ body {
     right: 60px
 }
 
-.button_frame {
-    position: relative;
-    height: 47px;
-    width: 137px;
-    background-color: #FF7400;
-    color: #fff;
-    margin: auto auto;
+.header-content__button {
+    margin: 0 auto;
 }
 
-.button-text {
-    position: absolute;
+.header-content__button-item {
+    border-radius: 5px;
     font-family: Open Sans, serif;
     font-weight: 600;
     font-size: 14px;
+    background-color: #FF7400;
     color: #fff;
-    display: flex;
     padding: 14px 28px;
     text-decoration: none;
+    transition: all 0.8s ease;
 }
 
-.button_frame:hover {
-background-color: #bf0000;
-transition: all 0.3s ease;
+.header-content__button-item:hover {
+    background-color: #bf0000;
+    color: #000;
+}
+
+.frame__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.frame__content-item {
+    margin-top: -120px;
+    background-color: #fff;
+    width:349px;
+    box-shadow: 10px 10px 40px 20px #0000001A;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frame__content-item_pic {
+    padding: 35px 110px 0;
+}
+
+.frame__content-item {
+    text-align: center;
+}
+
+.frame__content-description {
+    text-align: center;
+    padding: 0 20px 15px;
+}
+
+.frame__content-item_main-title {
+    display: flex;
+    margin-bottom: -25px;
+}
+
+.frame__content-item_main-title-first-element {
+    font-family: Tinos, serial;
+    font-size: 26px;
+    font-weight: 400;
+    color: #2C2C2C;
+    padding-right: 6px;
+}
+
+.frame__content-item_main-title-second-element {
+    font-family: Tinos, serial;
+    font-size: 26px;
+    font-weight: 400;
+    color: #BC9060
+}
+
+.frame__content-description {
+    font-family: Tinos, serial;
+    font-size: 26px;
+    font-weight: 400;
+    color:#656363;
 }
